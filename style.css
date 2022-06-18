@@ -1,0 +1,296 @@
+* {
+  font-family: "Caveat", cursive;
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Monda", sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  padding-top: 85px;
+}
+
+/* Заголовки и ссылки */
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.start {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #363d45;
+}
+
+h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #363d45;
+}
+
+a {
+  text-decoration: none;
+  color: #363d45;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #bcc8c8;
+}
+
+/* Слайды */
+
+.flex-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  max-width: 800px;
+  width: 100%;
+  height: 490px;
+  position: relative;
+  box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 700px) {
+  .slider-wrapper {
+    display: block;
+    height: 300px;
+  }
+}
+
+#btn-prev,
+#btn-next {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #bcc8c8;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+  opacity: 0.6;
+}
+
+#btn-next {
+  left: auto;
+  right: 0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot.active {
+  background-color: #6d7c7c;
+}
+
+span {
+  width: 15px;
+  height: 15px;
+  background-color: #bcc8c8;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+span:last-child {
+  margin-right: 0;
+}
+
+/* Блоки с изображениями 1 */
+
+.blocks1-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blocks1 {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .blocks1 {
+    display: block;
+    height: 900px;
+  }
+}
+
+.block {
+  width: 400px;
+  height: 430px;
+  justify-content: center;
+  display: flex;
+  font-size: 10px;
+  text-align: center;
+}
+
+.img1 {
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  background: url(1.jpg);
+  background-size: cover;
+  box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+body:hover .img1 {
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+}
+
+body .img1:hover {
+  transform: scale(1.1);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  margin-top: 30px;
+  width: 300px;
+  height: 350px;
+}
+
+.img2 {
+  width: 200px;
+  height: 200px;
+  margin-top: 215px;
+  background: url(3.jpg);
+  background-size: cover;
+  box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+body:hover .img2 {
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+}
+
+body .img2:hover {
+  transform: scale(1.1);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  width: 300px;
+  height: 350px;
+  margin-top: 50px;
+}
+
+.img3 {
+  width: 300px;
+  height: 400px;
+  margin-top: 25px;
+  margin-left: 100px;
+  background: url(5.jpg);
+  background-size: cover;
+  box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+body:hover .img3 {
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+}
+
+body .img3:hover {
+  transform: scale(1.2);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+/* Блоки с изображениями 2 */
+
+.blocks2-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blocks2 {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .blocks2 {
+    display: block;
+    height: 300px;
+  }
+}
+
+.img4 {
+  width: 300px;
+  height: 400px;
+  margin-top: 15px;
+  margin-right: 100px;
+  background: url(7.jpg);
+  background-size: cover;
+  box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+body:hover .img4 {
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+}
+
+body .img4:hover {
+  transform: scale(1.3);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+}
+
+.text {
+  margin-top: 90px;
+  text-align: left;
+}
+
+
+
